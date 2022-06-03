@@ -10,17 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestEmail.cshtml" />
+    <None Remove="*.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="TestEmail.cshtml">
+    <Content Include="*.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentEmail.Razor" Version="3.0.2" />
+    <PackageReference Include="FluentEmail.Core" Version="2.9.0" />
+    <PackageReference Include="FluentEmail.Razor" Version="2.9.0" />
     <PackageReference Include="FluentEmail.SendGrid" Version="2.9.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
